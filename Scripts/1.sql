@@ -6,12 +6,12 @@ go
 
 drop table if exists dbo.Newsletters;
 drop table if exists dbo.[Messages];
-drop table if exists dbo.Orders;
-drop table if exists dbo.Carts;
-drop table if exists dbo.Users;
 drop table if exists dbo.ProductPictures;
 drop table if exists dbo.TaggedProducts;
 drop table if exists dbo.OrderProducts;
+drop table if exists dbo.Orders;
+drop table if exists dbo.Carts;
+drop table if exists dbo.Users;
 drop table if exists dbo.Tags;
 drop table if exists dbo.Products;
 drop table if exists dbo.Categories;
