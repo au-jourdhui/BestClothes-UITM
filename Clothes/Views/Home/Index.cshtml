@@ -1,39 +1,154 @@
-﻿@{
-    ViewBag.Title = "Home Page";
+<!--banner-->
+<div class="banner">
+    <div class="matter-banner">
+        <div class="slider">
+            <div class="callbacks_container">
+                <ul class="rslides" id="slider">
+                    <li>
+                        <img src="~/Content/images/1.jpg" alt="">
+                        <div class="tes animated wow fadeInUp animated" data-wow-delay="1s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;">
+                            <h2>Women's clothes</h2>
+                            <h3>Coats and skirts</h3>
+                            <h4>Discounts up to 60%</h4>
+                            <p>You would never find better!</p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="~/Content/images/3.jpg" alt="">
+                        <div class="tes animated wow fadeInUp animated" data-wow-delay="1s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;">
+                            <h2>Men's clothes</h2>
+                            <h3>Hoodies & Pants</h3>
+                            <h4>Discounts up to 40%</h4>
+                            <p>Hurry up!</p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="~/Content/images/2.jpg" alt="">
+                        <div class="tes animated wow fadeInUp animated" data-wow-delay="1s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;">
+                            <h2>Accessories</h2>
+                            <h3>Watches, glasses and more</h3>
+                            <h4>Discounts up to 35%</h4>
+                            <p>Best offer!</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="clearfix"> </div>
+</div>
+<!--//banner-->
+<!--content-->
+<div class="content">
+    <div class="container">
+        <div class="content-top">
+            <div class="content-top1">
+                <div class="col-md-3 col-md2 animated wow fadeInLeft" data-wow-delay=".5s">
+                    <div class="col-md1 simpleCart_shelfItem">
+                        </a>
+                        <div class="price">
+                            <div class="clearfix"> </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 animated wow fadeInDown animated" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInDown;">
+                    <div class="col-md3">
+                        <div class="up-t">
+                            <h3>Discounts up to 60%</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-md2 animated wow fadeInRight" data-wow-delay=".5s">
+                    <div class="col-md1 simpleCart_shelfItem">
+                        </a>
+                        <div class="price">
+                            <div class="clearfix"> </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="clearfix"> </div>
+            </div>
+            <div class="content-top1">
+                    <div class="col-md-3 col-md2 animated wow fadeInLeft" data-wow-delay=".5s">
+                        <div class="col-md1 simpleCart_shelfItem">
+                                <img class="img-responsive" src="~/Content/images/@item.Image" alt="@item.Name" />
+                            </a>
+                            <div class="price">
+                                <div class="clearfix"> </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-md2 animated wow fadeInRight" data-wow-delay=".5s">
+                        <div class="col-md1 simpleCart_shelfItem">
+                            </a>
+                            <div class="price">
+                                <div class="clearfix"> </div>
+                            </div>
+                        </div>
+                    </div>
+                <div class="clearfix"> </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--//content-->
+
+<div class="con-tp">
+    <div class="container">
+            <div class="col-md-4 con-tp-lft animated wow @animations[counter]" data-wow-delay=".5s">
+                    <div class="content-grid-effect slow-zoom vertical">
+                        <div class="info-box">
+                            <div class="info-content simpleCart_shelfItem">
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            counter++;
+        }
+        <div class="clearfix"></div>
+    </div>
+</div>
+
+<div class="c-btm">
+    <div class="content-top1">
+        <div class="container">
+                <div class="col-md-3 col-md2 animated wow fadeInLeft" data-wow-delay=".5s">
+                    <div class="col-md1 simpleCart_shelfItem">
+                        <a href="@Url.Action("Single", new { id=item.Id })">
+                            <img class="img-responsive" src="~/Content/images/@item.Image" alt="@item.Name" />
+                        </a>
+                        <div class="price">
+                            <div class="clearfix"> </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-md-3 col-md2 animated wow fadeInRight" data-wow-delay=".5s">
+                    <div class="col-md1 simpleCart_shelfItem">
+                            <img class="img-responsive" src="~/Content/images/@item.Image" alt="@item.Name" />
+                        </a>
+                        <div class="price">
+                            <div class="clearfix"> </div>
+                        </div>
+
+                    </div>
+                </div>
+            <div class="clearfix"> </div>
+        </div>
+    </div>
+</div>
+
+@section scripts{
+    <script>
+        $(document).ready(function () {
+            $("#slider").responsiveSlides({
+                auto: false,
+                speed: 500,
+                namespace: "callbacks",
+                pager: true,
+            });
+            $("#slider").responsiveSlides();
+        });
+    </script>
 }
-
-<div class="jumbotron">
-    <h1>ASP.NET</h1>
-    <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
-    <p>
-        <a href="https://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a>
-    </p>
-</div>
-
-<div class="row">
-    <div class="col-md-4">
-        <h2>Getting started</h2>
-        <p>
-            ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
-            enables a clean separation of concerns and gives you full control over markup
-            for enjoyable, agile development.
-        </p>
-        <p>
-            <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a>
-        </p>
-    </div>
-    <div class="col-md-4">
-        <h2>Get more libraries</h2>
-        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-        <p>
-            <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a>
-        </p>
-    </div>
-    <div class="col-md-4">
-        <h2>Web Hosting</h2>
-        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
-        <p>
-            <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a>
-        </p>
-    </div>
-</div>
