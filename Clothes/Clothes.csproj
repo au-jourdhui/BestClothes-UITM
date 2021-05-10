@@ -248,6 +248,7 @@
     <Content Include="Content\fonts\OleoScript-Regular.ttf" />
     <Content Include="Content\fonts\Roboto-Regular.ttf" />
     <Content Include="libman.json" />
+    <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
