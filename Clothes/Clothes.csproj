@@ -143,6 +143,136 @@
       <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
     </Reference>
   </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="App_Start\FilterConfig.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\BaseController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Models\BestSellersVM.cs" />
+    <Compile Include="Models\CategoriesVM.cs" />
+    <Compile Include="Models\ChangeQuantityVM.cs" />
+    <Compile Include="Models\CheckoutProductVM.cs" />
+    <Compile Include="Models\IndexVM.cs" />
+    <Compile Include="Models\LoginVM.cs" />
+    <Compile Include="Models\ProductsVM.cs" />
+    <Compile Include="Models\RegisterVM.cs" />
+    <Compile Include="Models\SearchVM.cs" />
+    <Compile Include="Models\SendMessageVM.cs" />
+    <Compile Include="Models\SingleVM.cs" />
+    <Compile Include="Models\SubscribeVM.cs" />
+    <Compile Include="Models\TagsVM.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\css\animate.min.css" />
+    <Content Include="Content\css\bootstrap-3.1.1.min.css" />
+    <Content Include="Content\css\flexslider.css" />
+    <Content Include="Content\css\popuo-box.css" />
+    <Content Include="Content\css\style.css" />
+    <Content Include="Content\fonts\fontawesome-webfont.svg" />
+    <Content Include="Content\images\1.jpg" />
+    <Content Include="Content\images\10.jpg" />
+    <Content Include="Content\images\11.jpg" />
+    <Content Include="Content\images\12.jpg" />
+    <Content Include="Content\images\13.jpg" />
+    <Content Include="Content\images\14.jpg" />
+    <Content Include="Content\images\2.jpg" />
+    <Content Include="Content\images\3.jpg" />
+    <Content Include="Content\images\6.jpg" />
+    <Content Include="Content\images\9.jpg" />
+    <Content Include="Content\images\cart.png" />
+    <Content Include="Content\images\ce.jpg" />
+    <Content Include="Content\images\ce1.jpg" />
+    <Content Include="Content\images\ce2.jpg" />
+    <Content Include="Content\images\check.png" />
+    <Content Include="Content\images\img-sprite-1.png" />
+    <Content Include="Content\images\img-sprite.png" />
+    <Content Include="Content\images\pi.png" />
+    <Content Include="Content\images\pi1.png" />
+    <Content Include="Content\images\pi10.png" />
+    <Content Include="Content\images\pi11.png" />
+    <Content Include="Content\images\pi12.png" />
+    <Content Include="Content\images\pi2.png" />
+    <Content Include="Content\images\pi3.png" />
+    <Content Include="Content\images\pi4.png" />
+    <Content Include="Content\images\pi5.png" />
+    <Content Include="Content\images\pi6.png" />
+    <Content Include="Content\images\pi7.png" />
+    <Content Include="Content\images\pi8.png" />
+    <Content Include="Content\images\pi9.png" />
+    <Content Include="Content\images\pr.jpg" />
+    <Content Include="Content\images\pr1.jpg" />
+    <Content Include="Content\images\pr2.jpg" />
+    <Content Include="Content\images\pr3.jpg" />
+    <Content Include="Content\images\search.png" />
+    <Content Include="Content\images\si.jpg" />
+    <Content Include="Content\images\si1.jpg" />
+    <Content Include="Content\images\si2.jpg" />
+    <Content Include="Content\images\t1.jpg" />
+    <Content Include="Content\images\t10.jpg" />
+    <Content Include="Content\images\t11.jpg" />
+    <Content Include="Content\images\t12.jpg" />
+    <Content Include="Content\images\t2.jpg" />
+    <Content Include="Content\images\t3.jpg" />
+    <Content Include="Content\images\t4.jpg" />
+    <Content Include="Content\images\t5.jpg" />
+    <Content Include="Content\images\t6.jpg" />
+    <Content Include="Content\images\t7.jpg" />
+    <Content Include="Content\images\t8.jpg" />
+    <Content Include="Content\images\t9.jpg" />
+    <Content Include="Content\js\bootstrap.min.js" />
+    <Content Include="Content\js\fakeLoader.min.js" />
+    <Content Include="Content\js\imagezoom.js" />
+    <Content Include="Content\js\jquery.flexslider.js" />
+    <Content Include="Content\js\jquery.magnific-popup.js" />
+    <Content Include="Content\js\jquery.min.js" />
+    <Content Include="Content\js\memenu.js" />
+    <Content Include="Content\js\responsiveslides.min.js" />
+    <Content Include="Content\js\simpleCart.min.js" />
+    <Content Include="Content\js\wow.min.js" />
+    <Content Include="favicon.ico" />
+    <Content Include="Content\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Global.asax" />
+    <Content Include="ApplicationInsights.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\fonts\CroissantOne-Regular.ttf" />
+    <Content Include="Content\fonts\fontawesome-webfont.eot" />
+    <Content Include="Content\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Content\fonts\fontawesome-webfont.woff" />
+    <Content Include="Content\fonts\FontAwesome.otf" />
+    <Content Include="Content\fonts\OleoScript-Regular.ttf" />
+    <Content Include="Content\fonts\Roboto-Regular.ttf" />
+    <Content Include="libman.json" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Views\Web.config" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Shared\Error.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DAL\DAL.csproj">
+      <Project>{0c62a905-b8f4-4634-b229-f725571ef1f5}</Project>
+      <Name>DAL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="Content\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Content\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Content\fonts\glyphicons-halflings-regular.eot" />
+    <None Include="packages.config" />
+  </ItemGroup>
   <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
