@@ -45,6 +45,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Dao\BaseEntityDao.cs" />
+    <Compile Include="Dao\CartDao.cs" />
+    <Compile Include="Dao\CategoryDao.cs" />
+    <Compile Include="Dao\MessageDao.cs" />
+    <Compile Include="Dao\NewsletterDao.cs" />
+    <Compile Include="Dao\OrderDao.cs" />
+    <Compile Include="Dao\OrderProductDao.cs" />
+    <Compile Include="Dao\ProductDao.cs" />
+    <Compile Include="Dao\ProductPictureDao.cs" />
+    <Compile Include="Dao\TagDao.cs" />
+    <Compile Include="Dao\TaggedProductDao.cs" />
+    <Compile Include="Dao\UserDao.cs" />
     <Compile Include="Models\BaseEntity.cs" />
     <Compile Include="Models\Cart.cs" />
     <Compile Include="Models\Category.cs" />
