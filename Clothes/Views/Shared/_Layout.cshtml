@@ -1,3 +1,7 @@
+﻿@using DAL.Models;
+@{
+    User user = ViewBag.User;
+}
 
 <!DOCTYPE html>
 <html>
@@ -41,6 +45,8 @@
                     <h1><a href="@Url.Action("Index", "Home")">#Best<span>Clothes</span></a></h1>
                 </div>
                 <div class="col-sm-4 world animated wow fadeInRight" data-wow-delay=".5s">
+                    @if (user != null)
+                    {
                         <div class="cart box_1">
                             <a href="@Url.Action("Checkout", "Home")">
                                 <h3>
@@ -54,6 +60,7 @@
                             </a>
                             <p><a href="javascript:;" class="simpleCart_empty">Shopping cart</a></p>
                         </div>
+                    }
                 </div>
                 <div class="col-sm-2 number animated wow fadeInRight" data-wow-delay=".5s">
                     <span><i class="glyphicon glyphicon-phone"></i>+1234567890</span>
@@ -93,6 +100,10 @@
                                             <div class="tab-content">
                                                 <div class="tab-pane active" id="men">
                                                     <ul class="nav-list list-inline">
+                                                        @foreach (Category category in ViewBag.Categories)
+                                                        {
+                                                            <li><a href="@Url.Action("Category", "Home", new { id = category.Id })">@category.Name<img src="~/Content/images/@category.Image" class="img-responsive" alt="@category.Name" /></a></li>
+                                                        }
                                                     </ul>
                                                 </div>
                                             </div>
@@ -102,8 +113,14 @@
                                 </li>
                                 <li><a href="@Url.Action("Products", "Home", new { id = (int?)null })">Goods</a></li>
                                 <li><a href="@Url.Action("Contact", "Home")">Contacts</a></li>
+                                @if (user == null)
+                                {
                                     <li class="last"><a href="@Url.Action("Account", "Home")">Log in</a></li>
+                                }
+                                else
+                                {
                                     <li class="last"><a href="@Url.Action("Logout", "Home")">Log out</a></li>
+                                }
                             </ul>
                         </div><!-- /.navbar-collapse -->
 
@@ -186,11 +203,19 @@
                 <div class="col-md-3 footer-bottom-cate animated wow fadeInLeft" data-wow-delay=".5s">
                     <h6>Bestsellers</h6>
                     <ul>
+                        @foreach (Product product in ViewBag.BestSellers)
+                        {
+                            <li><a href="@Url.Action("Single", "Home", new { id = product.Id })">@product.Name</a></li>
+                        }
                     </ul>
                 </div>
                 <div class="col-md-2 footer-bottom-cate animated wow fadeInRight" data-wow-delay=".5s">
                     <h6>Tags</h6>
                     <ul>
+                        @foreach (Tag tag in ViewBag.Tags)
+                        {
+                            <li><a href="@Url.Action("Products", "Home", new { id = tag.Id })">@tag.Name</a></li>
+                        }
                     </ul>
                 </div>
                 <div class="col-md-5 footer-bottom-cate cate-bottom animated wow fadeInRight" data-wow-delay=".5s">

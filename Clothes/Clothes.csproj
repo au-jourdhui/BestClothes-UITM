@@ -248,7 +248,17 @@
     <Content Include="Content\fonts\OleoScript-Regular.ttf" />
     <Content Include="Content\fonts\Roboto-Regular.ttf" />
     <Content Include="libman.json" />
+    <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
+    <Content Include="Views\Home\Account.cshtml" />
+    <Content Include="Views\Home\BestSellers.cshtml" />
+    <Content Include="Views\Home\Categories.cshtml" />
+    <Content Include="Views\Home\Checkout.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Home\Products.cshtml" />
+    <Content Include="Views\Home\Register.cshtml" />
+    <Content Include="Views\Home\Single.cshtml" />
+    <Content Include="Views\Home\Tags.cshtml" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
